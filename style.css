@@ -1,0 +1,122 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: green;
+}
+
+.bggrey {
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.centerlist {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  
+}
+
+.centerlist li {
+  margin: 20px; 
+}
+
+.centerlist a {
+  text-decoration: none;
+  color: black;
+}
+
+.centerlist a:hover{
+  border-bottom: 2px solid blue;
+}
+
+.bgaqua {
+    background-color: aqua;
+  }
+
+button:hover {
+  background-color: green; 
+  color: white; 
+}
+
+.logo {
+  width: 120px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+article { 
+  margin:10px;
+  padding: 5px;
+  width: 60%;
+  border: 2px solid black;
+}
+
+article > img {
+  width: 400px;
+  height: 200px;
+}
+
+header {
+  padding-left: 250px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: aqua;
+}
+
+.fixedDownRight {
+  position: fixed; 
+  z-index: 1000;
+  width: 300px; 
+  height: 300px; 
+  right: 20px;
+  bottom: 20px;
+  animation: pulse 4s infinite; 
+  
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+@media (max-width: 600px) {
+  .fixedDownRight {
+    width: 150px; 
+    height: 150px; 
+    right: 20px;
+    bottom: 20px;
+  }
+}

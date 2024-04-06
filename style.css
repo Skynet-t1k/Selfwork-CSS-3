@@ -2,6 +2,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  
+}
+
+body {
+  margin: 0;
 }
 
 h3 {
@@ -9,6 +14,10 @@ h3 {
     font-weight: 400;
     font-style: normal;
     color: green;
+}
+
+h1{
+  margin-top: 0;
 }
 
 .bggrey {
@@ -19,10 +28,23 @@ h3 {
   justify-content: space-between;
 }
 
+header {
+  background-image: url('https://picsum.photos/id/53/800/300');
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .centerlist {
   list-style-type: none;
   text-decoration: none;
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
   display: flex; 
   justify-content: center; 
@@ -34,7 +56,12 @@ h3 {
   margin: 20px; 
 }
 
-.centerlist a {
+h4 > a {
+  text-decoration: none;
+  color: black;
+}
+
+li > a {
   text-decoration: none;
   color: black;
 }
@@ -43,9 +70,6 @@ h3 {
   border-bottom: 2px solid blue;
 }
 
-.bgaqua {
-    background-color: aqua;
-  }
 
 button:hover {
   background-color: green; 
@@ -55,8 +79,8 @@ button:hover {
 .logo {
   width: 120px;
   height: 80px;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 main {
@@ -64,11 +88,14 @@ main {
   justify-content: center;
 }
 
-article { 
-  margin:10px;
-  padding: 5px;
+.containerArticle { 
+  display: flex;
+  border-right: 20px; 
   width: 60%;
-  border: 2px solid black;
+}
+
+article {
+  margin-right: 10px;
 }
 
 article > img {
@@ -76,9 +103,6 @@ article > img {
   height: 200px;
 }
 
-header {
-  padding-left: 250px;
-}
 
 aside {
   display: flex;
@@ -89,34 +113,72 @@ aside {
   background-color: aqua;
 }
 
-.fixedDownRight {
-  position: fixed; 
-  z-index: 1000;
-  width: 300px; 
-  height: 300px; 
-  right: 20px;
-  bottom: 20px;
-  animation: pulse 4s infinite; 
+footer {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh;
+  margin-top: 300px;
+}
+
+.icona {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 85vh;
+  animation: pulse 4s infinite;
   
 }
+
 
 @keyframes pulse {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1); 
+    transform: scale(1.2); 
   }
   100% {
     transform: scale(1); 
   }
 }
 
-@media (max-width: 600px) {
-  .fixedDownRight {
-    width: 150px; 
-    height: 150px; 
+@media screen and (max-width: 650px){
+  .bggrey {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .containerArticle {
+    display: block;
+    width: 100%;
+  }
+
+  aside  {
+    display: block;
+    width: 100%;
+  }
+
+  main {
+    display: block;
+  }
+  
+  article {
+    margin: 10px 0px;
+  }
+
+  footer {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .icona {
+    position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 85vh;
   }
 }

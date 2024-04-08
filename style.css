@@ -99,8 +99,8 @@ article {
 }
 
 article > img {
-  width: 400px;
-  height: 200px;
+  width: 80%;
+  height: 60%;
 }
 
 
@@ -173,12 +173,17 @@ footer {
 
   footer {
     display: block;
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-top: 10px;
   }
 
   .icona {
     position: fixed;
     right: 20px;
     bottom: 85vh;
+  }
+  article {
+    margin-right: 0;
+    margin-left: 10px;
   }
 }
